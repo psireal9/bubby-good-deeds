@@ -1,6 +1,6 @@
 <?php 
 if(isset($_POST['submit'])){
-    $to = "email@example.com"; // this is your Email address
+    $to = "17015@eishcmc.com"; // this is your Email address
     $from = $_POST['email']; // this is the sender's Email address
     $first_name = $_POST['first_name'];
     $last_name = $_POST['last_name'];
@@ -13,12 +13,12 @@ if(isset($_POST['submit'])){
     $headers2 = "From:" . $to;
     mail($to,$subject,$message,$headers);
     mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
-    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+    echo "Mail Sent. Thank you " . $first_name . ", The email has been sent to $from .";
     // You can also use header('Location: thank_you.php'); to redirect to another page.
     }
 ?>
 
-<h2>Collection of good deeds</h2>
+<h2>Test</h2>
 
 <form action="" method="post">
 First Name: <input type="text" name="first_name"><br>
